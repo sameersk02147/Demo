@@ -1,0 +1,113 @@
+
+##diverting calls code##
+*21*num#
+#21#
+
+
+##Ansible Module##
+copy
+setup
+ping
+command (single aurg usage)
+shell (multi augment usage)
+file
+LineInFile
+yum
+service
+--syntax-check
+yum max used
+shell max used
+ansible-playbook (playbookname)
+ 
+
+
+
+##Linux Important Commands#
+-df -h for folders
+-du -h for files
+-tar -cvf filename to make it tar file
+-tar -tvf filename to view tar file
+-tar -xvf filename to xtract
+-filename gzip to compress the file
+-gunzip filename to uncompress the file
+-grep 10 filename for search number 10
+-grep -c 10 filename for number of time repeatations
+-grep -vi 10 filename for search except 10
+-find . -type f or d for only file and dir searches
+-find . -name "prog*" for programme search
+-find . -type f/d -name "prog*"
+-cat /etc/passwd | cut -d: -f1,7 to search only 1st and the 7th filed here d is the de-limiter(separator)
+-cat /etc/passwd | cut -c1-8 to search num of caracter
+
+script.sh
+chmod 755 script.sh
+
+x=10
+y=20
+echo $1 echo $2
+- use export command to set global value: export z=30
+
+-export PATH=/opt/:$PATH to export the shell script path
+
+ -for i in 1 2 3
+do
+echo "sameer intel"
+done
+
+
+
+
+##git important points to remember##
+Git remembarance
+-git reset HEAD Readme.md to unstage the commit
+-git checkout -- Readme.md for clean working tree
+-git config --global alisa.hist "log --online --graph --decorate --all"
+-git config --global --list
+-git mv example.txt demo.txt to reaname the file
+-git rm demo.txt to delete the file
+touch myfile.txt
+ mv LICENSE.md LICENSE.txt
+ git status
+-git add -u (for deletion)
+  145  git status
+- git add -A (for both addition and deletion)
+  148  git commit -m "file renamed"
+  150  rm myfile.txt
+  151  git status
+  152  git add -u
+  153  git status
+  154  git commit -m "remove myfile.txt"
+  155  git status
+-add exact file name in .gitignore to untrack by git
+-if we add app.lgo in .gitignore it wont track app.log file any more
+-git diff to know what changes have been done
+-git difftool same as git diff
+-fast forward merge like it is never existed and merged completely with master branch. or used no fast forward
+HEAD points to the last commit of the current branch
+-git checkout -b updates (to create and checkout new branch)
+-git checkout master (to switch masterbranch)
+-git merge updates (to merge)
+-git branch -d updates (to del the branch)
+-git mergetool (if conflict appears)
+-git tag -a v1.0 -m "your message" (for creating tag with anotation)
+-git tag --list (tolist tags)
+-git show (to view complete information)
+-git stash (to save and work later)
+-git stash list (to git wip list)
+-git stash pop (to get on wip and drop the changes same time)then commit the changes for clean working tree
+-git reset fd22377 --soft/mixed/hard to change header pointer
+
+-git reflog (all the action taken while in the repo)
+-git reset --hard 8256cf2 (time travel even after hard reset
+-git remote -v
+-git remote add origin https://github.com/sameersk02147/Demo.git
+-git push -u origin master --tags
+Steps for SSH Authentication
+- mkdir .ssh
+- cd .ssh
+- ssh-keygen -t rsa -C "sameersk02147@gmail.com"
+- vi id_rsa.pub (copy the public key and paste it in git setting ssh key authentication)
+- ssh -T git@github.com (successfully configured ssh key)
+- git clone git@github.com:sameersk02147/my-website.git (cloning the git)
+-git clone git@github.com:sameersk02147/my-website.git website (to specify perticular folder for cloning eg: website
+
